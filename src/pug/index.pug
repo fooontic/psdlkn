@@ -1,0 +1,54 @@
+doctype html
+html(lang="ru")
+
+	include components/head.pug
+	-var title = "Разработка сайта для кондитерского бренда Посиделкино"
+	-var description = "Разработка сайта и каталога продукции для Посиделкино. Главная, печенье, кондитеские изделия, производство, продукция, промо-дизайн, адаптивная версия."
+	-var url = "http://m18.ru/works/posidelkino/"
+	-var og_image = "http://m18.ru/works/posidelkino/og/posidelkino.jpg"
+	
+	+head(title, description, url, og_image)
+	
+	
+	body.cases.posidelkino#skrollr-body
+		.loading
+			div
+		
+		
+	
+	
+	
+	
+	
+	
+	
+		include components/footer.pug
+		
+		
+		
+		script(src="js/main.js")
+		script.
+			
+
+			function preloader() {
+				var bodyElem = document.getElementById('skrollr-body');
+				
+				setTimeout(function(){
+					bodyElem.classList.add('loaded');
+				} , 1000);
+			};
+			
+			preloader();
+			
+			//- if (Modernizr.touchevents) {				
+			//- 	preloader();
+			//- 	console.log('touch');
+			//- } else {
+			//- 	window.onload = function() {					
+			//- 		preloader();
+			//- 		var s = skrollr.init({
+			//- 			skrollrBody:'skrollr-body',
+			//- 			forceHeight: false
+			//- 		});
+			//- 	}
+			//- }

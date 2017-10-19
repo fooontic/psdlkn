@@ -1,21 +1,21 @@
 {
-  "name": "case-fixremont",
+  "name": "case-posidelkino",
   "version": "1.0.0",
-  "description": "project case for fixremont.ru",
+  "description": "project case for посиделкино.рф",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fooontic/fxrmnt.git"
+    "url": "git+https://github.com/fooontic/psdlkn.git"
   },
   "author": " (Vadik Matveev)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fooontic/fxrmnt/issues"
+    "url": "https://github.com/fooontic/psdlkn/issues"
   },
-  "homepage": "https://github.com/fooontic/fxrmnt",
+  "homepage": "https://github.com/fooontic/psdlkn",
   "dependencies": {
     "browser-sync": "^2.10.0",
     "del": "^2.1.0",

@@ -1,0 +1,109 @@
+html>body>div.loading {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		// background: #2f383d;
+		background: #e9454e;
+}
+
+html>body.main>div.loading {
+		background: #e9454e;
+}
+
+html>body>div.loading:before,html>body>div.loading:after,html>body>div.loading>div,html>body>div.loading>div:before,html>body>div.loading>div:after {
+		content: "";
+}
+
+html>body>div.loading:before {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		z-index: -1;
+		width: 52px;
+		height: 4px;
+		background: #fff;
+		transform: translate(-78px,0);
+		animation: loading5 2s cubic-bezier(.5,.6,.6,.5)infinite;
+}
+
+html>body>div.loading>div {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		width: 52px;
+		height: 4px;
+		// border-left: 52px solid #2f383d;
+		// border-right: 52px solid #2f383d;
+		border-left: 52px solid #e9454e;
+		border-right: 52px solid #e9454e;
+		transform: translate(-78px,0);
+}
+
+html>body.main>div.loading>div {
+		border-left: 52px solid #e9454e;
+		border-right: 52px solid #e9454e;
+}
+
+html>body>div.loading:after,html>body>div.loading>div:before,html>body>div.loading>div:after {
+		// border-left: 4px solid #2f383d;
+		// border-right: 4px solid #2f383d;
+		border-left: 4px solid #e9454e;
+		border-right: 4px solid #e9454e;
+}
+
+html>body.main>div.loading:after,html>body.main>div.loading>div:before,html>body.main>div.loading>div:after {
+		border-left: 4px solid #e9454e;
+		border-right: 4px solid #e9454e;
+}
+
+html>body>div.loading:after {
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		width: 4px;
+		height: 4px;
+		transform: translate(-50%,0);
+}
+
+html>body>div.loading>div:before,html>body>div.loading>div:after {
+		position: absolute;
+		top: 0;
+		width: 4px;
+		height: 4px;
+}
+
+html>body>div.loading>div:before {
+		left: 4px;
+}
+
+html>body>div.loading>div:after {
+		right: 4px;
+}
+
+html>body.loaded>div.loading {
+		left: -100%;
+		z-index: 400;
+		visibility: hidden;
+		height: 0;
+		padding-right: 32.8%;
+		transition: left 1s ease .5s,opacity .2s ease 1.5s,height 0 linear 1.7s,visibility 0 linear 1.7s;
+}
+
+html>body.loaded>div.loading:before,html>body.loaded>div.loading:after,html>body.loaded>div.loading>div:before,html>body.loaded>div.loading>div:after {
+		/* opacity:0; */
+		animation: none;
+}
+
+@media screen and (min-width: 1400px) {
+		html>body.loaded>div.loading {
+				padding-right:460px;
+		}
+}
+
+html>body.loaded.works>div.loading,html>body.loaded.team>div.loading {
+		padding-right: 0;
+}

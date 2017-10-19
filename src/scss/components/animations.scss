@@ -1,0 +1,163 @@
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: .2s;
+}
+
+
+
+@keyframes enterDown {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.enterDown {
+	animation-name: enterDown;
+	animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+}
+
+
+@keyframes enterRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.enterRight {
+	animation-name: enterRight;
+}
+
+
+@keyframes slideInDown {
+	from {
+		transform: translateY(-30px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.slideInDown {
+	animation-name: slideInDown;
+	animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+}
+
+
+@keyframes slideInUp {
+		from {
+			transform: translateY(100%);
+		}
+		to {
+			transform: translateY(0);
+		}
+}
+
+.slideInUp {
+	animation-name: slideInUp;
+}
+
+
+@keyframes headerBgIn {
+	from {
+		margin-top: -10vh;
+		background-position: center 10vh;
+	}
+	to {
+		margin-top: 0;
+		background-position: center 100%;
+	}
+}
+
+.headerBgIn {
+	animation-name: headerBgIn;
+}
+
+
+@keyframes cardsShadowAppear {
+	from {
+		box-shadow: 0 0 0 0 rgba(0,0,0,.0);
+	} to {
+		box-shadow: 0 20px 60px -10px rgba(0,0,0,.4);
+	}
+}
+
+.cardsShadowAppear {
+	animation-name: cardsShadowAppear;
+}
+
+
+@keyframes rulerAppear {
+	from {
+		left: 150vw;
+		opacity: 0;
+	} 70% {
+		opacity: 1;
+	}
+	to {
+		left: 0;
+	}
+}
+
+.rulerAppear {
+	animation-name: rulerAppear;
+}
+
+
+@keyframes fadeInDown {
+	from {
+		transform: translateY(-50%);
+		opacity: 0;
+	} to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.fadeInDown {
+	animation-name: fadeInDown;
+}
+
+
+@keyframes caseShadowAppear {
+	from {
+		box-shadow: 0 0 0 0 rgba(0,0,0,.0);
+	} to {
+		box-shadow: initial;
+	}
+}
+
+.caseShadowAppear {
+	// animation-name: caseShadowAppear;
+	animation-delay: .8s;
+	animation-timing-function: ease-out;
+}
+
+
+@keyframes loading5 {
+	from {
+		transform: translate(-78px,0)
+	}
+
+	10% {
+		transform: translate(-78px,0)
+	}
+
+	90% {
+		transform: translate(26px,0)
+	}
+
+	to {
+		transform: translate(26px,0)
+	}
+}

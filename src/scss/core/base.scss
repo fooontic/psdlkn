@@ -1,0 +1,30 @@
+html {
+	min-width: 320px;
+}
+
+html > body.cases {
+  font-family: $font;
+  font-size: $fz-root - 2px;
+	line-height: 1.5;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	color: $text-color;
+}
+
+
+.frame {
+	overflow: hidden;
+	display: block;
+}
+
+
+
+@media ($min-md) {
+	html {
+		font-size: $fz-root;
+	}
+}
+
+.spacer {
+	height: 50vw;
+}

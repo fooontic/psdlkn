@@ -1,0 +1,50 @@
+/// grid
+$screen-xs:		320px; // Xtra small screen / phone
+$screen-sm:		480px; // Small screen / phone
+$screen-md:		768px; // Medium screen / tablet
+$screen-lg:		1024px; // Large screen / desktop
+$screen-xl:		1440px; // Extra large screen / wide desktop
+
+$min-xs: 			'min-width:' + $screen-xs;
+$min-sm: 			'min-width:' + $screen-sm;
+$min-md: 			'min-width:' + $screen-md;
+$min-lg: 			'min-width:' + $screen-lg;
+$min-xl: 			'min-width:' + $screen-xl;
+
+$max-xs: 			'max-width:' + $screen-xs;
+$max-sm: 			'max-width:' + $screen-sm;
+$max-md: 			'max-width:' + $screen-md;
+$max-lg: 			'max-width:' + $screen-lg;
+$max-xl: 			'max-width:' + $screen-xl;
+
+
+
+/// fonts
+$font:		'Muller', 'Helvetica Neue', 'Arial', sans-serif;
+
+$fz-root:				18px;
+
+$fz: 			      1rem;
+$fz-h1--xs:			2.5rem;
+$fz-h1:					4rem;
+$fz-h2:					1.556rem;
+$fz-h3:					1.167rem;
+$fz-sm:					0.778rem;
+$fz-intro:			1.333rem;
+
+$lh:						1.5;
+$lh-h1:					1.2;
+
+/// colors
+$text-color:		#262F40;
+$caption-color:	#7E838C;
+
+
+
+// steps
+$h-step:				2vh;
+$h-step--s:			$h-step * 2;
+$h-step--m:			$h-step * 3;
+$h-step--l:			$h-step * 5;
+
+$w-step:					2vw;

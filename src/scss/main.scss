@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+
+@import "../../node_modules/normalize.css/normalize";
+
+@import "core/fonts";
+
+@import "core/variables";
+@import "core/base";
+
+@import "components/preloader";
+@import "components/header";
+@import "components/grid";
+@import "components/animations";
+// @import "components/case";
+@import "components/btns";
+@import "components/footer";

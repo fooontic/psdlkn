@@ -1,0 +1,40 @@
+.case {
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: $h-step--s;
+	margin-left: -6.5vw;
+	margin-right: -6.5vw;
+	@include shadow();
+	@include frame();
+	// transition: box-shadow .1s ease-out;
+
+	&__img img, &__video video {
+		@include img-fluid();
+		width: 100%;
+	}
+
+}
+.case.wow[style^="visibility"] {
+	@include noShadow();
+}
+
+.case.wow.animated {
+	@include shadow();
+	transition: box-shadow .5s ease-out 1.1s;
+}
+
+
+@media ($min-md) {
+	.case {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media ($min-lg) {
+	.case {
+		margin-bottom: $h-step--m;
+	}
+}

@@ -1,0 +1,15 @@
+@mixin heading($size) {
+	font-size: $size;
+	margin: 1em auto .6em;
+	line-height: $lh-h1;
+}
+
+@mixin caption {
+	color: $caption-color;
+	font-size: $fz-sm;
+	line-height: 1.4;
+}
+
+@mixin type-width {
+	max-width: 700px;
+}

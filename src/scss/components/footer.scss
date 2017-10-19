@@ -1,0 +1,38 @@
+html > body.cases > footer {
+	// font-family: 'Open Sans',sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+
+	& > div.container {
+		box-sizing: border-box;
+		min-width: 320px;
+		max-width: 1440px;
+		width: 100%;
+		padding: 100px 6.5vw 70px;
+		justify-content: flex-start;
+
+		& > .main-social { margin: 0 auto;}
+
+		@media ($min-lg) {
+			padding: 100px 10% 70px;
+
+			& > div {
+				// flex: 1 1 auto;
+				// display: flex;
+				// flex-flow: row wrap;
+				// justify-content: center;
+			}
+
+			& > div > ul {
+				// width: 100%;
+				font-size: 0;
+				padding: 24px 0 20px;
+			}
+		}
+
+		@media (min-width: 1465px) {
+			padding: 100px 144px 70px;
+		}
+	}
+
+}

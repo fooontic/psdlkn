@@ -1,0 +1,24 @@
+@mixin shadow {
+	box-shadow: 0 10px 50px -7px rgba(0, 0, 0, .3);
+
+	@media ($min-md) {
+		box-shadow: 0 13px 65px -8px rgba(0, 0, 0, .3);
+	}
+
+	@media ($min-lg) {
+		box-shadow: 0 15px 80px -10px rgba(0, 0, 0, .3);
+	}
+}
+
+
+@mixin noShadow {
+	box-shadow: none;
+
+	@media ($min-md) {
+		box-shadow: none;
+	}
+
+	@media ($min-lg) {
+		box-shadow: none;
+	}
+}
