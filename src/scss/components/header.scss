@@ -36,9 +36,9 @@
 @media ($min-lg) {
 	.page-header {
 		min-height: 660px;
-		height: 80vmin;
-		max-height: 860px;
-		margin-bottom: $h-step--l;
+		height: 90vmin;
+		// max-height: 860px;
+		padding-bottom: $h-step--l;
 
 		& .m18-logo {
 			left: 50px;

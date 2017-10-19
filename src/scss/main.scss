@@ -7,11 +7,24 @@
 
 @import "core/variables";
 @import "core/base";
+@import "mixins/img";
+@import "mixins/type";
+@import "mixins/shadows";
+@import "mixins/frame";
+@import "core/type";
 
 @import "components/preloader";
 @import "components/header";
 @import "components/grid";
 @import "components/animations";
-// @import "components/case";
+@import "components/case";
 @import "components/btns";
 @import "components/footer";
+
+.posidelkino {
+
+	@import "sections/page-header";
+}
+
+
+@import "sections/page-header__animation";
