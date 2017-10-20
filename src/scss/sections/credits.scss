@@ -16,7 +16,7 @@
 			bottom: 0;
 			opacity: .3;
 			background-image: url(../img/header-bg.png);
-			background-size: 346px auto;
+			background-size: 230px auto;
 			background-repeat: repeat;
 		}
 	}
@@ -107,6 +107,10 @@
 		&-outer {
 			text-align: left;
 			padding: $h-step--m 0 $h-step--l;
+
+			&::before {
+				background-size: 346px auto;
+			}
 		}
 
 		&-outer .credits__cookie {

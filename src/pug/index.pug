@@ -32,6 +32,41 @@ html(lang="ru")
 				
 		main
 			
+			section.intro
+				.container-cases
+
+					h2.title.wow.slideInDown
+						span.wow.enterDown Сочная главная
+					.flow.wow.slideInDown(data-wow-offset="50")
+						p.wow.enterDown(data-wow-offset="50") «<span class="caps">Fix</span>Мне очень стыдно, что приходится использовать Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat.
+						
+					.case.wow(data-wow-offset="100")
+						picture.case__img.wow.enterDown(data-wow-offset="100")
+							source(media="(min-width: 320px) and (max-width: 767px)" srcset="img/main--sm.jpg" alt="Главная страница сайта Посиделкино")
+							source(media="(min-width: 768px)" srcset="img/main.jpg" alt="Главная страница сайта Посиделкино")
+							img(src="img/main.jpg", alt="Главная страница сайта Посиделкино")
+			
+			
+			section.concept
+				.container-cases
+					
+					.flow-box
+						h2.title.wow.slideInDown
+							span.wow.enterDown Ни одной прямой линии
+						.flow.wow.slideInDown(data-wow-offset="50")
+							p.wow.enterDown(data-wow-offset="50") Ключевой стилеобразующий принцип сайта&nbsp;&mdash; отсутсвие прямых линий и&nbsp;острых углов. Это выделяет сайт из&nbsp;большинства и&nbsp;делает его дружественней. А&nbsp;различные микроанимации помогают управлять вниманием посетителя и&nbsp;добавляют приятных впечатлений.
+						
+					.frame
+						.case__video.wow.enterDown(data-wow-offset="300" data-wow-delay="0.3s")
+							video(autoplay loop muted poster="img/admin.jpg")
+								source(src="video/stuff.webm" type="video/webm")
+								source(src="video/stuff.mp4" type="video/mp4")
+									
+						.case__video.case__video--md.wow.enterDown(data-wow-offset="300" data-wow-delay="0.3s")
+							video(autoplay loop muted poster="img/admin.jpg")
+								source(src="video/stuff--md.webm" type="video/webm")
+								source(src="video/stuff--md.mp4" type="video/mp4")
+						
 			
 			section.responsive
 				
@@ -79,7 +114,10 @@ html(lang="ru")
 								img.hazelnut(src="img/phone-animation/hazelnut.png", alt="")
 									
 				figure.responsive__screens.wow(data-wow-offset="300")#responsive
-					img(src="img/responsive-screens.jpg", alt="")
+					picture
+						source(media="(min-width: 320px) and (max-width: 767px)" srcset="img/responsive-screens--sm.jpg" alt="Адаптив страниц")
+						source(media="(min-width: 480px)" srcset="img/responsive-screens.jpg" alt="Адаптив страниц")
+						img(src="img/responsive-screens.jpg", alt="Адаптив страниц")
 					
 					
 			

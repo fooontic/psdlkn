@@ -11,6 +11,7 @@
 	& .responsive__screens {
 		width: 100%;
 		position: relative;
+		overflow: hidden;
 		visibility: visible !important;
 
 		&::before {
@@ -176,11 +177,7 @@
 			order: 2;
 			margin-left: $h-step--m;
 			max-width: 420px;
-			margin-top: -2vh;
-		}
-
-		& .flow-box .title {
-			margin-top: 0;
+			margin-top: -4vh;
 		}
 
 		& .phone__outer {

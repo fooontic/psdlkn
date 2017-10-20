@@ -12,7 +12,7 @@
 		bottom: 0;
 		opacity: .3;
 		background-image: url(../img/header-bg.png);
-		background-size: 346px auto;
+		background-size: 230px auto;
 		background-repeat: repeat;
 	}
 
@@ -55,6 +55,11 @@
 @media ($min-md) {
 	.page-header {
 		min-height: 80vh;
+		margin-bottom: 0;
+
+		&::before {
+			background-size: 346px auto;
+		}
 
 		&::after {
 			height: 440px;
@@ -101,7 +106,7 @@
 
 		&::after {
 			height: 660px;
-			top: calc(90% - 220px);
+			top: calc(90% - 100px);
 		}
 
 		& .container-cases {
@@ -129,6 +134,16 @@
 		& .promo.cookie img {
 			width: initial;
 			top: 0;
+		}
+	}
+}
+
+@media ($min-lg) {
+	.page-header {
+
+		&::after {
+			height: 660px;
+			top: calc(90% - 220px);
 		}
 	}
 }
