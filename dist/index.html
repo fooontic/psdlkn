@@ -38,6 +38,31 @@
       </div>
     </header>
     <main>
+      <section class="responsive">
+        <div class="container-cases">
+          <div class="flow-box">
+            <h2 class="title wow slideInDown" data-wow-offset="100"><span class="wow enterDown" data-wow-offset="100">Адаптирован под реальность</span></h2>
+            <div class="flow wow slideInDown" data-wow-offset="100">
+              <p class="wow enterDown" data-wow-offset="100">Адаптировали сайт под все существующие размеры дисплеев и&nbsp;типы устройств. Пользователю комфортно использовать сервис как со&nbsp;стационарного компьютера, так с&nbsp;телефона, планшета или ноутбука.</p>
+            </div>
+          </div>
+          <div class="phone__outer wow" data-wow-offset="400">
+            <div class="phone__inner">
+              <div class="phone__frame"><img src="img/phone-animation/phone.png" alt=""></div>
+              <div class="logo__frame"><img class="logo-shadow" src="img/phone-animation/logo-shadow.png" alt=""><img class="logo" src="img/phone-animation/logo.png" alt=""></div>
+              <div class="burger__frame"><img class="burger-shadow" src="img/phone-animation/burger-shadow.png" alt=""><img class="burger" src="img/phone-animation/burger.png" alt=""></div>
+              <div class="head__frame"><img class="head-shadow" src="img/phone-animation/head-shadow.png" alt=""><img class="head" src="img/phone-animation/head.png" alt=""></div>
+              <div class="circle__frame"><img class="circle-shadow" src="img/phone-animation/circle-shadow.png" alt=""><img class="circle" src="img/phone-animation/circle.png" alt=""></div>
+              <div class="product__frame"><img class="product-shadow" src="img/phone-animation/product-shadow.png" alt=""><img class="product" src="img/phone-animation/product.png" alt=""></div>
+              <div class="btn__frame"><img class="btn-shadow" src="img/phone-animation/btn-shadow.png" alt=""><img class="btn" src="img/phone-animation/btn.png" alt=""></div>
+              <div class="citrus__frame"><img class="citrus-shadow" src="img/phone-animation/taste-shadow.png" alt=""><img class="citrus" src="img/phone-animation/citrus.png" alt=""></div>
+              <div class="grape__frame"><img class="grape-shadow" src="img/phone-animation/taste-shadow.png" alt=""><img class="grape" src="img/phone-animation/grape.png" alt=""></div>
+              <div class="hazelnut__frame"><img class="huzelnut-shadow" src="img/phone-animation/taste-shadow.png" alt=""><img class="hazelnut" src="img/phone-animation/hazelnut.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <figure class="responsive__screens wow" data-wow-offset="300" id="responsive"><img src="img/responsive-screens.jpg" alt=""></figure>
+      </section>
       <section class="credits-outer">
         <div class="container-cases"><a class="btn-sitelink" href="http://xn--d1achcjfqbhbx.xn--p1ai/"> <span>посиделкино.рф</span>
             <svg class="external-link" width="36" height="36" viewBox="0 0 36 36">
@@ -66,7 +91,7 @@
               </li>
             </ul>
           </div>
-          <figure class="cookie"><img src="img/cookie.png" alt="Овсяная печенька"></figure>
+          <figure class="credits__cookie"><img src="img/cookie.png" alt="Овсяная печенька"></figure>
         </div>
       </section>
     </main>
@@ -107,6 +132,8 @@
       //- 		});
       //- 	}
       //- }
+      var wow = new WOW();
+      wow.init();
     </script>
   </body>
 

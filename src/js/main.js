@@ -1,3 +1,3 @@
 // vendor/scrollr.min.js
 //= vendor/modernizr-custom.js
-// ../../node_modules/wowjs/dist/wow.min.js
+//= ../../node_modules/wowjs/dist/wow.min.js

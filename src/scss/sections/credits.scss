@@ -2,7 +2,7 @@
 
 	&-outer {
 		position: relative;
-		padding: 20vh 0 24vh;
+		padding: $h-step--m 0 24vh;
 		transition: background-position .3s ease-out;
 		text-align: center;
 
@@ -69,7 +69,7 @@
 		min-height: 2.4em;
 	}
 
-	&-outer .cookie {
+	&-outer .credits__cookie {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -80,13 +80,17 @@
 		margin: 0;
 
 		& img {
-			@include img-fluid;
+			@include img-fluid();
 		}
 	}
 
 	&-outer .btn-sitelink {
 		margin-top: 2em;
 		color: $case-color;
+
+		@media ($max-sm) {
+			font-size: 28px;
+		}
 	}
 
 }
@@ -105,7 +109,7 @@
 			padding: $h-step--m 0 $h-step--l;
 		}
 
-		&-outer .cookie {
+		&-outer .credits__cookie {
 			bottom: initial;
 			transform: translateY(-50%);
 			left: 60%;
@@ -125,7 +129,7 @@
 			padding: 0 0 $h-step--l;
 		}
 
-		&-outer .cookie {
+		&-outer .credits__cookie {
 			left: auto;
 			right: 10%;
 		}

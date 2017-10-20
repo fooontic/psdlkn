@@ -33,6 +33,55 @@ html(lang="ru")
 		main
 			
 			
+			section.responsive
+				
+				.container-cases
+					
+					.flow-box
+						h2.title.wow.slideInDown(data-wow-offset="100")
+							span.wow.enterDown(data-wow-offset="100") Адаптирован под реальность
+						.flow.wow.slideInDown(data-wow-offset="100")
+							p.wow.enterDown(data-wow-offset="100") Адаптировали сайт под все существующие размеры дисплеев и&nbsp;типы устройств. Пользователю комфортно использовать сервис как со&nbsp;стационарного компьютера, так с&nbsp;телефона, планшета или ноутбука.
+					
+					
+					.phone__outer.wow(data-wow-offset="400")
+						.phone__inner
+							//- .phone__frame
+								img(src="http://files.m18.ru/files/04b68a07969cf5d0.png", alt="")
+							.phone__frame
+								img(src="img/phone-animation/phone.png", alt="")
+							.logo__frame
+								img.logo-shadow(src="img/phone-animation/logo-shadow.png", alt="")
+								img.logo(src="img/phone-animation/logo.png", alt="")
+							.burger__frame
+								img.burger-shadow(src="img/phone-animation/burger-shadow.png", alt="")
+								img.burger(src="img/phone-animation/burger.png", alt="")
+							.head__frame
+								img.head-shadow(src="img/phone-animation/head-shadow.png", alt="")
+								img.head(src="img/phone-animation/head.png", alt="")
+							.circle__frame
+								img.circle-shadow(src="img/phone-animation/circle-shadow.png", alt="")
+								img.circle(src="img/phone-animation/circle.png", alt="")
+							.product__frame
+								img.product-shadow(src="img/phone-animation/product-shadow.png", alt="")
+								img.product(src="img/phone-animation/product.png", alt="")
+							.btn__frame
+								img.btn-shadow(src="img/phone-animation/btn-shadow.png", alt="")
+								img.btn(src="img/phone-animation/btn.png", alt="")
+							.citrus__frame
+								img.citrus-shadow(src="img/phone-animation/taste-shadow.png", alt="")
+								img.citrus(src="img/phone-animation/citrus.png", alt="")
+							.grape__frame
+								img.grape-shadow(src="img/phone-animation/taste-shadow.png", alt="")
+								img.grape(src="img/phone-animation/grape.png", alt="")
+							.hazelnut__frame
+								img.huzelnut-shadow(src="img/phone-animation/taste-shadow.png", alt="")
+								img.hazelnut(src="img/phone-animation/hazelnut.png", alt="")
+									
+				figure.responsive__screens.wow(data-wow-offset="300")#responsive
+					img(src="img/responsive-screens.jpg", alt="")
+					
+					
 			
 			
 			section.credits-outer
@@ -74,7 +123,7 @@ html(lang="ru")
 									dd.credits__role Руководитель проекта
 									
 					
-					figure.cookie
+					figure.credits__cookie
 						img(src="img/cookie.png", alt="Овсяная печенька")
 	
 	
@@ -112,3 +161,8 @@ html(lang="ru")
 			//- 		});
 			//- 	}
 			//- }
+			
+			
+			var wow = new WOW();
+			
+			wow.init();
