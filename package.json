@@ -55,6 +55,7 @@
     "postcss-svgo": "^2.1.2",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
-    "streamqueue": "^1.1.1"
+    "streamqueue": "^1.1.1",
+    "wowjs": "^1.1.3"
   }
 }

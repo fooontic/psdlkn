@@ -58,14 +58,45 @@ html(lang="ru")
 						
 					.frame
 						.case__video.wow.enterDown(data-wow-offset="300" data-wow-delay="0.3s")
-							video(autoplay loop muted poster="img/admin.jpg")
+							video(autoplay loop muted poster="img/stuff.jpg")
 								source(src="video/stuff.webm" type="video/webm")
 								source(src="video/stuff.mp4" type="video/mp4")
 									
 						.case__video.case__video--md.wow.enterDown(data-wow-offset="300" data-wow-delay="0.3s")
-							video(autoplay loop muted poster="img/admin.jpg")
+							video(autoplay loop muted poster="img/stuff--md.jpg")
 								source(src="video/stuff--md.webm" type="video/webm")
 								source(src="video/stuff--md.mp4" type="video/mp4")
+									
+									
+			
+			section.catalog
+				.container-cases
+					
+					h2.title.wow.slideInDown
+						span.wow.enterDown Продукт лицом
+					.flow.wow.slideInDown(data-wow-offset="50")
+						p.wow.enterDown(data-wow-offset="50") Главная гордость Посиделкино&nbsp;&mdash; продукция. Она любима жителями России и&nbsp;стран СНГ. Мы&nbsp;решили не&nbsp;прятать её&nbsp;среди скучных сеток и&nbsp;сложных фильтров, а&nbsp;показывать ярко и&nbsp;крупно. Страница каталога плавно переходит в&nbsp;карточку продукта, где посетитель может подробнее ознакомится печеньем, его составом и&nbsp;пищевой ценностью.
+							
+					.case
+						.case__video
+							video(autoplay loop muted poster="img/catalog.jpg")
+								source(src="video/catalog.webm" type="video/webm")
+								source(src="video/catalog.mp4" type="video/mp4")
+							
+			
+			section.recipes
+				.container-cases
+					
+					h2.title.wow.slideInDown
+						span.wow.enterDown Рецепты
+					.flow.wow.slideInDown(data-wow-offset="50")
+						p.wow.enterDown(data-wow-offset="50") Помимо продукции, &laquo;Посиделкино&raquo; хочет делиться с&nbsp;потребителями рецептами десертов, сладостей на&nbsp;основе своих печений и&nbsp;пряников.
+									
+				.recipes__case
+					figure.recipes__catalog
+						img(src="img/recipe-catalog.jpg", alt="")
+					figure.recipes__item
+						img(src="img/recipe-item.jpg", alt="")
 						
 			
 			section.responsive

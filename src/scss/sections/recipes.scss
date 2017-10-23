@@ -1,0 +1,36 @@
+.recipes {
+
+	& img {
+		@include img-fluid();
+		width: 100%;
+	}
+
+	&__case {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		margin-bottom: $h-step--m;
+	}
+
+	&__catalog, &__item {
+		@include shadow();
+		@include frame();
+		margin-bottom: $h-step--s;
+		flex: 0 1 auto;
+	}
+
+	@media ($min-md) {
+		&__case {
+			flex-flow: row nowrap;
+		}
+
+		&__catalog {
+			max-width: 45%;
+			margin-top: 4%;
+		}
+
+		&__item {
+			margin-left: -8%;
+		}
+	}
+}

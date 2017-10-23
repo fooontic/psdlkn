@@ -3248,6 +3248,93 @@ html > body.cases > footer > div.container > .main-social
     }
 }
 
+.posidelkino .catalog
+{
+    margin-bottom: 10vh;
+}
+
+.posidelkino .recipes img
+{
+    display: block;
+
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.posidelkino .recipes__case
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 6vh; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.posidelkino .recipes__catalog,
+.posidelkino .recipes__item
+{
+    display: block;
+    overflow: hidden;
+
+    margin-bottom: 4vh;
+
+    box-shadow: 0 10px 50px -7px rgba(0, 0, 0, .3);
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+}
+@media (min-width: 768px)
+{
+    .posidelkino .recipes__catalog,
+    .posidelkino .recipes__item
+    {
+        box-shadow: 0 13px 65px -8px rgba(0, 0, 0, .3);
+    }
+}
+@media (min-width: 1024px)
+{
+    .posidelkino .recipes__catalog,
+    .posidelkino .recipes__item
+    {
+        box-shadow: 0 15px 80px -10px rgba(0, 0, 0, .3);
+    }
+}
+.posidelkino .recipes__catalog > *,
+.posidelkino .recipes__item > *
+{
+    display: block;
+}
+
+@media (min-width: 768px)
+{
+    .posidelkino .recipes__case
+    {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    }
+    .posidelkino .recipes__catalog
+    {
+        max-width: 45%;
+        margin-top: 4%;
+    }
+    .posidelkino .recipes__item
+    {
+        margin-left: -8%;
+    }
+}
+
 body.loaded .page-header
 {
     -webkit-animation: headerBgIn 1.1s cubic-bezier(.22, .61, .36, 1) 1 both;
